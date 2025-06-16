@@ -47,7 +47,7 @@ class GCCTools:
     #
     # This solution courtesy of:
     # https://stackoverflow.com/questions/6526500/c-name-mangling-library-for-python/6526814
-    def get_unmangled_names(self, symbol_names, chunk_size=1000):
+    def get_unmangled_names(self, symbol_names, chunk_size=50):
         # for very long lists we can exceed the maximum length of the command line
         # so we split the names in chunks
         def chunks(l):
